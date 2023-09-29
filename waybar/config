@@ -1,0 +1,51 @@
+{
+    "layer": "top",
+    "margin-top": 10,
+    "margin-bottom": 0,
+    "height": 16,
+    "spacing": 0,
+
+    "include": ["~/dotfiles/waybar/modules.json"],
+
+    "modules-left": [
+        "custom/labelapps",
+        "wlr/taskbar",
+        "hyprland/window",
+        "custom/media"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",  
+        "group/hardware", 
+        "backlight", 
+        "keyboard-state", 
+        "sway/language", 
+        "network",
+        "clock",
+        "tray"
+    ],
+
+    // Groups
+
+    //Hardware
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "disk",
+            "cpu",
+            "memory"
+        ]
+    },
+
+    //Taskbar
+    "group/taskbar": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/labelapps",
+            "wlr/taskbar"
+        ]
+    }
+}
+
