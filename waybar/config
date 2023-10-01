@@ -1,29 +1,45 @@
+/*
+░██╗░░░░░░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░  ░█████╗░░█████╗░███╗░░██╗███████╗██╗░██████╗░
+░██║░░██╗░░██║██╔══██╗╚██╗░██╔╝██╔══██╗██╔══██╗██╔══██╗  ██╔══██╗██╔══██╗████╗░██║██╔════╝██║██╔════╝░
+░╚██╗████╗██╔╝███████║░╚████╔╝░██████╦╝███████║██████╔╝  ██║░░╚═╝██║░░██║██╔██╗██║█████╗░░██║██║░░██╗░
+░░████╔═████║░██╔══██║░░╚██╔╝░░██╔══██╗██╔══██║██╔══██╗  ██║░░██╗██║░░██║██║╚████║██╔══╝░░██║██║░░╚██╗
+░░╚██╔╝░╚██╔╝░██║░░██║░░░██║░░░██████╦╝██║░░██║██║░░██║  ╚█████╔╝╚█████╔╝██║░╚███║██║░░░░░██║╚██████╔╝
+░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝  ░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░
+
+by Arkinux-Code
+*/
 {
+    // General Settings
     "layer": "top",
     "margin-top": 10,
     "margin-bottom": 0,
     "height": 16,
     "spacing": 0,
 
-    "include": ["~/dotfiles/waybar/modules.json"],
+    //Includes Modules
+    "include": ["$HOME/dotfiles/waybar/modules.json"],
 
+    // Modules on the left
     "modules-left": [
 	    "custom/arch",
         "hyprland/window",
         "custom/media"
     ],
+
+    // Center
     "modules-center": [
         "hyprland/workspaces"
     ],
+
+    // Right
     "modules-right": [
+	    "tray",
+        "battery",
         "pulseaudio",  
         "group/hardware", 
-        "backlight", 
-        "keyboard-state", 
-        "sway/language", 
+        // "keyboard-state",  THIS DOES NOT WORK! GONNA FIX IT LATER!
         "network",
-        "clock",
-        "tray"
+        "clock"
     ],
 
     // Groups
