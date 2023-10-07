@@ -79,4 +79,3 @@ Then execute the ``install.sh``.
 ```bash
 ./install.sh
 ```
-The installer will copy the config files in the needed locations and you need to do anything. It is recommended to install drivers for your Intel/AMD card.
