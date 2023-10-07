@@ -1,5 +1,5 @@
 # Dotfiles
-These are my configuration files for my Arch Linux Rice. Here you can install in your system with a simple .sh file!![rice](https://github.com/Arkinux-Code/Dotfiles/assets/72414293/4e6990cd-4560-4236-b705-be6f1f15db52)
+These are my configuration files for my Arch Linux Rice. Here you can install in your system with a simple .sh file!! <br>**WARNING!** These dotfiles are not complete! For example ``swaylock`` is not customised.<br>[rice](https://github.com/Arkinux-Code/Dotfiles/assets/72414293/4e6990cd-4560-4236-b705-be6f1f15db52)
 
 # Installation
 
@@ -60,12 +60,14 @@ update-grub
 Reboot. <br>
 After installing the Zen Kernel, check if it is running with ``uname -a``.
 
-After installing the kernel, you need to install the ``nvidia-dkms`` package.
-**Arch Linux:** ``pacman -S nvidia-dkms``
-**Debian:** ``apt install nvidia-dkms``
-**DNF:** ``
+After installing the kernel, you need to install the ``nvidia-dkms`` package. <br>
+**Arch Linux:** ``pacman -S nvidia-dkms`` <br>
+**Debian:** ``apt install nvidia-dkms`` <br>
+**DNF:** `dnf install akmod-nvidia` <br>
 
-Clone the repository (or fork it if you want to edit settings before installing the dotfiles) inside the home folder. The install and update .sh files will be included in the repository.
+Reboot. The NVIDIA drivers should work. <br>
+
+After rebooting, clone the repository (or fork it if you want to edit settings before installing the dotfiles) inside the home folder. The install and update .sh files will be included in the repository.
 ```bash
 git clone https://github.com/Arkinux-Code/Dotfiles.git && cd Dotfiles
 ```
