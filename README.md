@@ -6,7 +6,7 @@ These are my configuration files for my Arch Linux Rice. Here you can install in
 **WARNING!**: For people with NVIDIA Cards, NVIDIA drivers will not work for everybody because of Wayland! Go to the Hyprland wiki for further information: https://wiki.hyprland.org/Nvidia/. <br>
 **WARNING 2!**: Make sure to modify settings that will work on the computer! But installing with the default settings *should* not cause problems.
 
-## Automatic Installation
+## Installation
 
 ## Non NVIDIA users
 Clone the repository (or fork it if you want to edit settings before installing the dotfiles) inside the home folder. The install and update .sh files will be included in the repository.
